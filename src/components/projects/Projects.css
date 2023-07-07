@@ -1,0 +1,29 @@
+
+.projects {
+    padding: 3rem 0;    
+}
+
+.project-card {
+    padding: 5rem 3rem;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 1.8rem;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.project-name h2{
+    font-weight: bold;  
+}
+
+.project-intro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+

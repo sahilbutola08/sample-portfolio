@@ -1,0 +1,68 @@
+
+.contact {
+    position: relative;
+    padding: 6rem 0;
+}
+
+.contact::before {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url('/public/common-bg.svg');
+    z-index: -2;
+    opacity: 0.3;
+}
+
+.contact::after {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(153, 153, 153, .2);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.form {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 50rem;
+    margin: 4rem auto;
+}
+
+.form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+
+.form input:not([type="submit"]), textarea {
+    padding: 1.5rem;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ebebeb;
+}
+
+.form input, textarea {
+    outline: none;
+    margin: 1rem 0;
+}
+
+.form textarea {
+    resize: none;
+    height: 10rem;
+}
+
+.form input[type="submit"] {
+    align-self: flex-end;
+    width: 12rem;
+    padding: 0.8rem  4rem;
+}
+

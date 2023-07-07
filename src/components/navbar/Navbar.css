@@ -1,0 +1,133 @@
+
+.navbar {
+    height: 4.382rem;
+    width: 100%;
+    box-shadow: 0px 0.5px 80px rgba(0,0,0,0.2);
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    align-items: baseline;
+    z-index: 2;
+}
+
+.profile-info {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.profile-info h1 {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-image {
+    height: 2.5rem;
+    width: 2.5rem;
+    background: blue;
+    border-radius: 50%;
+}
+
+.dropdown {
+    position: fixed;
+    top: 4.382rem;
+    left: 0;
+    margin: 0;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+
+.dropdown-links {
+    position: absolute;
+    z-index: 3;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.dropdown-links::after {
+    content: '';
+    height: 50%;
+    width: 100%;
+    position: inherit;
+    top: 50%;
+    z-index: -1;
+    left: 0;
+    box-shadow: 0px 0.5px 20px rgba(0,0,0,0.5);
+}
+
+.dropdown-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.menu-links  {
+    display: none;
+}
+
+.dropdown-links li {
+    background-color: #fff;
+    width: 100vw;
+    border-top: 1px solid #eee;
+    padding: 1.5rem 2rem;
+    text-align: right;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.profile-image {
+    background: url('/public/profile.png');
+    background-size: contain;
+}
+
+@media screen and (width > 601px) {
+
+    .dropdown {
+        display: none;
+    }
+
+    .menu-links {
+        display: inline-block;
+        height: 100%;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .links {
+        list-style-type: none;
+        gap: 0.9rem;
+    }
+
+    .links li {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .links a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #333;
+        font-weight: 700;
+        font-size: 0.9rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+}

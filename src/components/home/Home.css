@@ -1,0 +1,76 @@
+
+@media screen and (width < 901px) {
+    .floating-socials {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 901px) {
+
+    .home {
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .home::before {
+        height: 100vh;
+        width: 100%;
+        content: "";
+        position: absolute;
+        background-color: rgba(153, 153, 153, .3);
+        z-index: -1;
+        opacity: 0.3;
+    }
+
+    .home::after {
+        height: 100vh;
+        width: 100%;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('/public/common-bg.svg');
+        background-position: center;
+        z-index: -2;
+        opacity: 0.2;
+    }
+
+    .home h1 {
+        font-size: 5vw;
+        letter-spacing: 2.5px;
+        font-weight: 800;
+    }
+
+    .home p {
+        font-size: 2.3vw;
+        color: #333;
+        line-height: 1.6;
+        padding: 0 1.5rem;
+    }
+
+    .floating-socials {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-25%);
+        background-color: #fff;
+        padding: 0.3rem;
+        box-shadow: 0px 0.5px 50px rgba(0,0,0,0.2);
+    }
+
+    .icon {
+        font-size: 28px;
+        padding: 0.3rem 0.5rem;
+        border-radius: 5px;
+    }
+
+    .icon:hover {
+        background-color: rgba(120,67,233,0.2);
+    }
+
+}
